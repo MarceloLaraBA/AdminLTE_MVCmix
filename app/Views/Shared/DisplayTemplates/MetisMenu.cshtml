@@ -1,0 +1,23 @@
+﻿@* // This template is for the root level *@
+@model MvcSiteMapProvider.Web.Html.Models.MenuHelperModel
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+<ul class="sidebar-menu">
+    <li class="header">MAIN NAVIGATION</li>    
+    @foreach (var node in Model.Nodes)
+    {
+        var css = "";
+        if (node.IsCurrentNode || node.IsInCurrentPath)
+        {
+            css = "active";
+        }
+        <li class="treeview @css">
+            @Html.DisplayFor(m => node, "MetisMenuNode") 
+            @if (node.Children.Any())
+            {
+                @Html.DisplayFor(m => node.Children, "MetisMenuNodeList") 
+            }
+        </li>
+    }
+</ul>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <mvcSiteMapNode title="Home" url="/" icon="fa-dashboard" >
+    <mvcSiteMapNode title="Templates" url="#" icon="fa-file-o">
+      <mvcSiteMapNode title="Widgets" controller="Home" action="tmpWidgets" targetFrame="content"  icon="fa-th"/>
+      <mvcSiteMapNode title="Charts" controller="Home" action="tmpChartsChartsJS" targetFrame="content" icon="fa-pie-chart">
+        <mvcSiteMapNode title="ChartJS" controller="Home" action="tmpChartsChartsJS" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Morris" controller="Home" action="tmpChartsMorris" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Flot" controller="Home" action="tmpChartsFlot" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Inline charts" controller="Home" action="tmpChartsInline" targetFrame="content"  icon="fa-circle-o"/>
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="UI Elements" controller="Home" action="tmpUI" targetFrame="content"  icon="fa-laptop">
+        <mvcSiteMapNode title="General" controller="Home" action="tmpUIGeneral" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Icons" controller="Home" action="tmpUIIcons" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Buttons" controller="Home" action="tmpUIButtons" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Sliders" controller="Home" action="tmpUISliders" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Timeline" controller="Home" action="tmpUITimeline" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Modals" controller="Home" action="tmpUIModals" targetFrame="content"  icon="fa-circle-o"/>
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="Forms" controller="Home" action="tmpForms" targetFrame="content"  icon="fa-edit">
+        <mvcSiteMapNode title="General" controller="Home" action="tmpFormsGeneral" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Advanced" controller="Home" action="tmpFormsAdvanced" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Editors" controller="Home" action="tmpFormsEditor" targetFrame="content"  icon="fa-circle-o"/>
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="Tables" controller="Home" action="tmpTables" targetFrame="content"  icon="fa-table">
+        <mvcSiteMapNode title="Simple" controller="Home" action="tmpTablesSimple" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Data tables" controller="Home" action="tmpTablesData" targetFrame="content"  icon="fa-circle-o"/>
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="Calendar" controller="Home" action="tmpCalendar" targetFrame="content"  icon="fa-calendar"/>
+      <mvcSiteMapNode title="Mailbox" controller="Home" action="tmpMailbox" targetFrame="content"  icon="fa-envelope"/>
+      <mvcSiteMapNode title="Examples" controller="Home" action="tmpSample" targetFrame="content"  icon="fa-folder">
+        <mvcSiteMapNode title="Invoice" controller="Home" action="tmpSampleInvoice" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Profile" controller="Home" action="tmpSampleProfile" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Login" controller="Home" action="tmpSampleLogin" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Register" controller="Home" action="tmpSampleRegister" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Lockscreen" controller="Home" action="tmpSampleLockscreen" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="404 Error" controller="Home" action="tmpSample404" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="500 Error" controller="Home" action="tmpSample500" targetFrame="content"  icon="fa-circle-o"/>
+        <mvcSiteMapNode title="Blank Page" controller="Home" action="tmpSampleBlank" targetFrame="content"  icon="fa-circle-o"/>
+      </mvcSiteMapNode>
+      <mvcSiteMapNode title="Documentation" controller="Home" action="tmpDocs" targetFrame="content"  icon="fa-book"/>
+
+
+    </mvcSiteMapNode>
+    <mvcSiteMapNode title="Contact" controller="Home" action="Contact" icon=""/>
+  </mvcSiteMapNode>
+
+
+</mvcSiteMap>

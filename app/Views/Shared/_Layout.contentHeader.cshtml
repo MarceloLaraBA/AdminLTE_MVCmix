@@ -1,0 +1,10 @@
+﻿@{
+    Layout = null;
+}
+<section class="content-header">
+    <h1>
+        @Html.MvcSiteMap().SiteMapTitle()
+        <small>@ViewBag.SubTitle</small>
+    </h1>
+    @Html.MvcSiteMap().SiteMapPath()
+</section>

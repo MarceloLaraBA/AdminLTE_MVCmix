@@ -1,0 +1,31 @@
+﻿@* // This template is for the node *@
+@model MvcSiteMapProvider.Web.Html.Models.SiteMapNodeModel
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+@if (Model.IsCurrentNode && Model.SourceMetadata["HtmlHelper"].ToString() != "MvcSiteMapProvider.Web.Html.MenuHelper")
+{
+    <text>@Model.Title</text>
+}
+else if (Model.IsClickable)
+{
+    if (string.IsNullOrEmpty(Model.Description))
+    {
+        <a href="@Model.Url">@Model.Title</a>
+    }
+    else
+    {
+        <a href="@Model.Url" title="@Model.Description">
+            @if (!string.IsNullOrEmpty(Model.Attributes["icon"].ToString()))
+            {
+                <i class="fa @Model.Attributes["icon"]"></i>
+            }
+            @Model.Title
+            @if (Model.Children.Any())
+            {<i class="fa fa-angle-left pull-right"></i>}
+        </a>
+    }
+}
+else
+{
+    <text>@Model.Title</text>
+}

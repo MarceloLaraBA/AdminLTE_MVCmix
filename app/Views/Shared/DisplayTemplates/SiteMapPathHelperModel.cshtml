@@ -1,0 +1,29 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapPathHelperModel
+@using System.Web.Mvc.Html
+@using System.Linq
+@using Microsoft.Ajax.Utilities
+@using MvcSiteMapProvider.Web.Html.Models
+@{
+    var css="";
+}
+
+
+<ol class="breadcrumb">
+    @foreach (var node in Model)
+    {
+        if (node != Model.Last())
+        {
+            css = "active";
+        }
+
+        <li class="@css">
+            @if (node.Attributes["icon"] != null)
+            {
+                <i class="fa @node.Attributes["icon"]"></i>
+            }
+            @Html.DisplayFor(m => node)
+        </li>
+    }
+</ol>
+
+

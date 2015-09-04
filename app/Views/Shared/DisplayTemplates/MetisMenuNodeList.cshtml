@@ -1,0 +1,22 @@
+﻿@* // This template is for the descendent lists below the root level *@
+@model MvcSiteMapProvider.Web.Html.Models.SiteMapNodeModelList
+@using System.Web.Mvc.Html
+@using MvcSiteMapProvider.Web.Html.Models
+
+<ul class="treeview-menu">
+    @foreach (var node in Model)
+    {
+        var css = "";
+        if (node.IsCurrentNode || node.IsInCurrentPath)
+        {
+            css = "active";
+        }
+        <li class="@css">
+            @Html.DisplayFor(m => node, "MetisMenuNode") 
+            @if (node.Children.Any())
+            {
+                @Html.DisplayFor(m => node.Children, "MetisMenuNodeList") 
+            }
+        </li>
+    }
+</ul>
