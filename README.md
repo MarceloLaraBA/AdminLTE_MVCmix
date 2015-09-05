@@ -1,4 +1,4 @@
-# AdminLTE_MVCmix
+# AdminLTE MVCmix
 MVC version of AdminLTE (https://github.com/almasaeed2010/AdminLTE) ready to use in Visual Studio 2015
 
 
